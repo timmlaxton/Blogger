@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 // POST api/auth
 // Authorize logged in user and retrieve tokej
 // Private
-router.post('/', (reg, res) => {
+router.post('/', (req, res) => {
 	res.send(' Log in user');
 });
 

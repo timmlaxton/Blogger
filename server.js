@@ -5,11 +5,13 @@ const app = express();
 
 connectDB();
 
+app.use(express.json({ extended: false }));
+
 app.get('/', (req, res) => res.json({ msg: 'Welcome to my blog' }));
 
-app.use('api/users', require('./routes/users'));
-app.use('api/auth', require('./routes/auth'));
-app.use('api/blogs', require('./routes/blogs'));
+app.use('/api/users', require('./routes/users'));
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/blogs', require('./routes/blogs'));
 
 const PORT = process.env.PORT || 5000;
 
