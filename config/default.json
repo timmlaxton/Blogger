@@ -1,0 +1,3 @@
+{
+	"mongoURI": "mongodb+srv://tim123:tim123@blogging.kstqw.mongodb.net/Blogging?retryWrites=true&w=majority"
+}
