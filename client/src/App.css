@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-	--primary-color: #003699;
+	--primary-color: #32923f;
 	--dark-color: #333333;
 	--light-color: #f4f4f4;
 	--danger-color: #dc3545;
@@ -439,4 +439,8 @@ table th {
 		text-align: center;
 		justify-content: center;
 	}
+}
+
+.card {
+	border: none;
 }

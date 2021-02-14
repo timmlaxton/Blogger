@@ -1,11 +1,12 @@
 import React from 'react';
+import Blogs from '../blogs/Blogs';
 
-const HomeScree = () => {
+const HomeScreen = () => {
 	return (
-		<div>
-			<h1>Home</h1>
+		<div className="grid-3">
+			<Blogs />
 		</div>
 	);
 };
 
-export default HomeScree;
+export default HomeScreen;

@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const Header = ({ title, icon }) => {
+const Header = ({ name, icon }) => {
 	return (
 		<div className="header bg-primary">
 			<h1>
-				<i className={icon} /> {title}
+				<i className={icon} /> {name}
 			</h1>
 			<ul>
 				<li>
@@ -15,18 +15,21 @@ const Header = ({ title, icon }) => {
 				<li>
 					<Link to="/about">About</Link>
 				</li>
+				<li>
+					<Link to="/form">Form</Link>
+				</li>
 			</ul>
 		</div>
 	);
 };
 
 Header.propTypes = {
-	title: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
 	icon: PropTypes.string
 };
 
 Header.defaultProps = {
-	title: ' Blogger ',
+	name: ' Blogger ',
 	icon: 'fas fa-blog'
 };
 
